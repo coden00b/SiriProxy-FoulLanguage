@@ -27,11 +27,66 @@ class SiriProxy::Plugin::FoulLanguage < SiriProxy::Plugin
     
   end
 
-  listen_for /fuck/i OR listen_for /shit/i do
+  listen_for /fuck/i do
     lines = IO.readlines(self.phrase_file)
     rl = rand(lines.count-1)
     say lines[rl]
     request_completed
   end  
 
+  listen_for /fucker/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /motherfucker/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+
+  listen_for /shit/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /pussy/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /bitch/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /cock/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /bastard/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
+  
+  listen_for /cunt/i do
+    lines = IO.readlines(self.phrase_file)
+    rl = rand(lines.count-1)
+    say lines[rl]
+    request_completed
+  end
 end

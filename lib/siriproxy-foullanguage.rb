@@ -27,7 +27,7 @@ class SiriProxy::Plugin::FoulLanguage < SiriProxy::Plugin
     
   end
 
-  listen_for /fuck/i or listen_for /shit/i do
+  listen_for /fuck/i OR listen_for /shit/i do
     lines = IO.readlines(self.phrase_file)
     rl = rand(lines.count-1)
     say lines[rl]
